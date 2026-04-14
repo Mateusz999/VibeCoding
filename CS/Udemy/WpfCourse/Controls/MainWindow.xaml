@@ -1,0 +1,106 @@
+﻿<Window x:Class="WpfCourse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <StackPanel >
+
+
+        <Label
+            Margin="16,16,16,0"
+            BorderThickness="1"
+            BorderBrush="Black"
+            MouseDown="Label_GotFocus"
+            MouseLeave="Label_MouseLeave"
+            Focusable="True"
+            >
+            <StackPanel Orientation="Horizontal">
+                <Image 
+                    Source="https://cdn-icons-png.flaticon.com/128/542/542638.png" 
+                    Width="32"/>
+                <AccessText 
+                    FontSize="32" 
+                    Text="Message">
+                    
+                </AccessText>
+            </StackPanel>
+        </Label>
+        <TextBox
+            Margin="16"
+            FontSize="32">
+        </TextBox>
+
+        <TextBox 
+            FontSize="30"
+            Margin="15"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            SpellCheck.IsEnabled="True"
+            Language="pl-PL"
+            Background="AliceBlue"
+            Foreground="Brown"
+            Text="ReadOnly"
+            IsReadOnly="True"
+            />
+
+        <Button
+            Background="Coral"
+            Foreground="Blue"
+            x:Name="myButton"
+            Content="Click Me!"
+            Width="100"
+            Height="30"
+            Click="myButton_Click"
+            MouseDoubleClick="myButton_MouseDoubleClick"
+            MouseEnter="myButton_MouseEnter"
+            MouseLeave="myButton_MouseLeave"
+            ToolTip="I am your best button!"
+            FontStyle="Italic"
+            FontWeight="Bold"
+            >
+        </Button>
+        <Label Name="myLabel"
+               FontSize="16">This is Lable</Label>
+
+        <Label
+            FontWeight="Bold"
+            >Who do you vote for ?</Label>
+        <RadioButton 
+            GroupName="vote" 
+            VerticalContentAlignment="Center"
+            x:Name="rbDuda"
+            Checked="rbDuda_Checked"
+            Unchecked="rbDuda_Unchecked">
+            <WrapPanel>
+                <Image 
+                    Width="50" 
+                    Source="https://ocdn.eu/pulscms-transforms/1/5EZk9kpTURBXy85YTczMGE5YzQ4YmVmODE0MjQ5MzdmN2ZhYmIyY2M2ZS5qcGeSlQMAzJvNB8_NBGWTBc0FZM0Cst4AAqEwBqExAQ"></Image>
+                <Label Name="lbDuda">Duda</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton 
+            GroupName="vote" 
+            VerticalContentAlignment="Center" 
+            Margin="0,5,0,5"
+            x:Name="rbNawrocki">
+            <WrapPanel>
+                <Image 
+                    Width="50" 
+                    Source="https://img.dorzeczy.pl/img/mam-chodzic-nagi-nawrocki-reaguje-na-zarzuty-po-aferze-z-koszulka/02/86/1d8945981b1340a8550f08064d8c.webp"></Image>
+                <Label>Nawrocki</Label>
+            </WrapPanel>
+        </RadioButton>
+
+
+
+        <Label
+            FontWeight="Bold"
+            >Who do you feel about it ?</Label>
+        <RadioButton GroupName="feel">Good</RadioButton>
+        <RadioButton GroupName="feel">Ok</RadioButton>
+        <RadioButton GroupName="feel">Not Happy</RadioButton>
+
+    </StackPanel>
+</Window>

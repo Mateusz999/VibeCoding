@@ -1,0 +1,75 @@
+﻿<Window x:Class="testingSkills.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testingSkills"
+        mc:Ignorable="d"
+        Title="Junior .NET developer testing skills exercise" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+            Grid.Row="0"
+            Height="35"
+            Width="150"
+            Text="Skill Test"
+            FontSize="25"
+            TextAlignment="Center"
+            FontWeight="Bold"
+            />
+
+        <Border
+            BorderThickness="1"
+            CornerRadius="5"
+            Width="150"
+            Height="50"
+            Grid.Row="1"
+            BorderBrush="Black"
+            Padding="3"
+            >
+            <TextBox
+                x:Name="txtInput"
+                BorderThickness="0"
+                FontSize="30"
+                PreviewTextInput="txtInput_PreviewTextInput"
+                TextChanged="txtInput_TextChanged"
+                GotFocus="txtInput_GotFocus"
+                PreviewMouseDown="txtInput_PreviewMouseDown"
+                PreviewKeyDown="txtInput_PreviewKeyDown"
+                DataObject.Pasting="txtInput_Pasting"
+                />
+        </Border>
+
+        <Button
+            x:Name="btnFactorial"
+            Grid.Row="2"
+            Content="x!"
+            Width="100"
+            Height="25"
+            Click="btnFactorial_Click"
+            />
+
+        <TextBox 
+            TextWrapping="Wrap"
+            BorderThickness="2"
+            Height="100"
+            Width="700"
+            Grid.Row="3"
+            FontSize="20"
+            TextAlignment="Center"
+            VerticalAlignment="Center"
+            VerticalContentAlignment="Center"
+            x:Name="txtResult"
+            IsReadOnly="True"
+            IsTabStop="False"
+            />
+
+
+    </Grid>
+</Window>

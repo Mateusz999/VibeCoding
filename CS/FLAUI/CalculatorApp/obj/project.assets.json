@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "Accessibility/4.6.0-preview3-27504-2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Accessibility.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Accessibility.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Accessibility/4.6.0-preview3-27504-2": {
+      "sha512": "bshAx2sQ9VjjakzhZtX1wmqhugq353LlRKK1F3QY1d91AzawdWPdE5cknBLFZ9EjQ5+MBMzsqUI1HicFhcUDZQ==",
+      "type": "package",
+      "path": "accessibility/4.6.0-preview3-27504-2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "accessibility.4.6.0-preview3-27504-2.nupkg.sha512",
+        "accessibility.nuspec",
+        "lib/net45/_._",
+        "lib/netcoreapp3.0/Accessibility.dll",
+        "ref/net45/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "Accessibility >= 4.6.0-preview3-27504-2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mateu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mateu\\Desktop\\VibeCoding\\CS\\FLAUI\\CalculatorApp\\CalculatorApp.csproj",
+      "projectName": "CalculatorApp",
+      "projectPath": "C:\\Users\\mateu\\Desktop\\VibeCoding\\CS\\FLAUI\\CalculatorApp\\CalculatorApp.csproj",
+      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mateu\\Desktop\\VibeCoding\\CS\\FLAUI\\CalculatorApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "dependencies": {
+          "Accessibility": {
+            "target": "Package",
+            "version": "[4.6.0-preview3-27504-2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

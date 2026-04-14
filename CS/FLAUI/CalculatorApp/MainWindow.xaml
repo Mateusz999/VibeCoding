@@ -1,0 +1,22 @@
+﻿<Window x:Class="CalculatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel VerticalAlignment="Center">
+        <TextBox  Width="200" x:Name="parametrOne" Margin="10,10,10,10" AutomationProperties.AutomationId="parametrOneTest" />
+        <TextBox  Width="200" x:Name="parametrTwo" Margin="10,10,10,10" AutomationProperties.AutomationId="parametrTwoTest" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button x:Name="btnPlus" Margin="10,10,0,10" Content="Plus" Click="btnPlus_Click" AutomationProperties.AutomationId="btnPlusTest" />
+            <Button x:Name="btnPMinus" Margin="10,10,0,10" Content="Minus" Click="btnPMinus_Click"   AutomationProperties.AutomationId="btnMinusTest"/>
+            <Button x:Name="btnDivide" Margin="10,10,0,10" Content="Divide" Click="btnDivide_Click" AutomationProperties.AutomationId="btnDivideTest" />
+            <Button x:Name="btnMultiply" Margin="10,10,0,10" Content="Multiply" Click="btnMultiply_Click"  AutomationProperties.AutomationId="btnMultiplyTest" />
+        </StackPanel>
+
+        <TextBlock x:Name="tbResult" AutomationProperties.AutomationId="tbResultTest" Width="200" Height="50" FontSize="37" />
+    </StackPanel>
+</Window>

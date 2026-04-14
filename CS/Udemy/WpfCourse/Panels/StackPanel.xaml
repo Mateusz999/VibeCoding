@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfCourse.Panels.StackPanelDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCourse.Panels"
+        mc:Ignorable="d"
+        Title="StackPanelDemo" Height="200" Width="200">
+    <Canvas>
+        <Rectangle x:Name="shape"
+           Fill="Red"
+           Width="50"
+           Height="50"
+           Canvas.Left="0"
+           Canvas.Top="50"/>
+
+        <Button Click="Button_Click" Canvas.Left="0" Canvas.Bottom="0">left</Button>
+        <Button Click="Button_Click_1" Canvas.Right="0" Canvas.Bottom="0">right</Button>
+        <Button Click="Button_Click_2" Canvas.Left="50" Canvas.Top="0">top</Button>
+        <Button Click="Button_Click_3" Canvas.Left="50" Canvas.Bottom="0">bottom</Button>
+    </Canvas>
+</Window>

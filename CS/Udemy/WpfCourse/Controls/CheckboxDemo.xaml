@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfCourse.CheckboxDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCourse"
+        mc:Ignorable="d"
+        Title="CheckboxDemo" Height="400" Width="200
+        ">
+    <StackPanel>
+        <Label FontWeight="Bold" >Topings</Label>
+        <CheckBox 
+            IsThreeState="True"
+            Unchecked="cbParentCheckedChanged"
+            Checked="cbParentCheckedChanged"
+            Name="cbParent">Select All</CheckBox>
+        <CheckBox 
+            Margin="15,5"
+            x:Name="cbCheese"
+            VerticalContentAlignment="Center"
+            Checked="cbTopingsCheckedChanged"
+            Unchecked="cbTopingsCheckedChanged"
+            >
+            <WrapPanel>
+                <Image 
+                    Width="30"
+                    Source="https://t3.ftcdn.net/jpg/05/62/84/38/240_F_562843880_6xDeOqnbAfPyzzpdsgAsYdr3rteqwKAT.jpg"></Image>
+                <Label Name="lbCheese">Extra cheese</Label>
+            </WrapPanel>
+        </CheckBox>
+
+        <CheckBox 
+            Unchecked="cbTopingsCheckedChanged"
+            Checked="cbTopingsCheckedChanged"
+            Margin="15,5"
+            Name="cbTuna"
+            VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image 
+                    Width="30"
+                    Source="https://t4.ftcdn.net/jpg/00/55/13/99/240_F_55139923_teVkJg8pcPKKgnPgZo0vExIWYpEGKMk3.jpg"></Image>
+                <Label>Tuna</Label>
+            </WrapPanel>
+        </CheckBox>
+
+
+        <CheckBox 
+            Unchecked="cbTopingsCheckedChanged"
+            Checked="cbTopingsCheckedChanged"
+            Name="cbHam"
+            Margin="15,5"
+            VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image 
+                    Width="30"
+                    Source="https://t4.ftcdn.net/jpg/03/68/10/59/240_F_368105949_8GD3vIDHveLyCS1ao2WcZw2MCtZ804xz.jpg"></Image>
+                <Label>Ham</Label>
+            </WrapPanel>
+        </CheckBox>
+
+        <StackPanel Margin="5">
+             <Label >Name:</Label>
+            <TextBox />
+            <Label>Password:</Label>
+            <PasswordBox 
+                PasswordChar="1"
+                MaxLength="6"
+                />
+        </StackPanel>
+       
+    </StackPanel>
+</Window>

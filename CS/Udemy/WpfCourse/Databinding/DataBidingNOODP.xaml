@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfCourse.Databinding.DataBidingNOODP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCourse.Databinding"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="DataBidingNOODP" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <ListBox
+                ItemsSource="{Binding AvailableNumbers}"
+                Margin="4,0,1,10"
+                Height="250"
+                >
+            </ListBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,20,10">
+                <Button MinWidth="75" Margin="10,0,0,0" Click="AddNumber">Add</Button>
+                <Button MinWidth="75" Margin="10,0,0,0" Click="DeleteNumber">Delete</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

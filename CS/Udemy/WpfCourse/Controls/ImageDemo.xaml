@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfCourse.ImageDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCourse"
+        mc:Ignorable="d"
+        Title="ImageDemo" Height="300" Width="400">
+    <StackPanel>
+        <Image
+            x:Name="myImage"
+            MouseUp="Image_MouseUp"
+            Width="200"
+            Source="/Images/homer_2006.png"
+            />
+    </StackPanel>
+</Window>
