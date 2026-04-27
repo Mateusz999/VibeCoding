@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WindowsStoreClone"
         xmlns:uc="clr-namespace:WindowsStoreClone.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="Windows Store Clone by Mateusz Biernat"
         Name="MainWindowMetro"
         Height="800" Width="1350">
     <Grid>

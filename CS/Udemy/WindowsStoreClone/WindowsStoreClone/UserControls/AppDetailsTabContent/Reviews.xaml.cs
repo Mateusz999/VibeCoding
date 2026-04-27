@@ -13,25 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WindowsStoreClone.UserControls
+namespace WindowsStoreClone.UserControls.AppDetailsTabContent
 {
     /// <summary>
-    /// Logika interakcji dla klasy AppDetailsTitleAndBackground.xaml
+    /// Logika interakcji dla klasy Reviews.xaml
     /// </summary>
-    public partial class AppDetailsTitleAndBackground : UserControl
+    public partial class Reviews : UserControl
     {
-        public delegate void OnBackButtonClicked(object sender, RoutedEventArgs e);
-
-        public event OnBackButtonClicked BackButtonClicked;
-
-        public AppDetailsTitleAndBackground()
+        public Reviews()
         {
             InitializeComponent();
+            MainStackPanel.Children.Clear();
+            for (int i = 0; i < 6; i++)
+            {
+                MainStackPanel.Children.Add(new AReview());
+            }
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
         {
-            BackButtonClicked(sender, e);
+           
         }
     }
 }
