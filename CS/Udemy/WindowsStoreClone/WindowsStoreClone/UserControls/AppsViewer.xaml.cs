@@ -21,6 +21,9 @@ namespace WindowsStoreClone.UserControls
     public partial class AppsViewer : UserControl
     {
         List<AnApp> PresentedApps;
+        public delegate void OnAppClicked(AnApp sender, RoutedEventArgs e);
+        public event OnAppClicked AppClicked;
+
         public AppsViewer()
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace WindowsStoreClone.UserControls
             for (int i = 0; i < 15;  i++)
             {
                 AnApp app  = new AnApp();
+                app.AppClicked += Curr_AppClicked;
                 PresentedApps.Add(app); 
             }
         }
@@ -60,6 +64,11 @@ namespace WindowsStoreClone.UserControls
             var parent = ((Control)sender).Parent as UIElement;
             parent.RaiseEvent(eventArg);
 
+        }
+
+        private void Curr_AppClicked(AnApp sender, RoutedEventArgs e )
+        {
+            AppClicked(sender, e);
         }
     }
 }
