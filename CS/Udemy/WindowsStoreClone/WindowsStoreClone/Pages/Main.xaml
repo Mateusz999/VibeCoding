@@ -185,6 +185,6 @@
                 </StackPanel>
             </TabItem>
         </TabControl>
-        
+        <uc:HeaderRightButtons  x:Name="rightHeaderButtons"  Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="0"/>
     </Grid>
 </Page>

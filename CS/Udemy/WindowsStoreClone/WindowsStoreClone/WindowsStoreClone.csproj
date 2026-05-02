@@ -64,6 +64,9 @@
     <Compile Include="Pages\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\TopAppsWrapped.xaml.cs">
+      <DependentUpon>TopAppsWrapped.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\AnApp.xaml.cs">
       <DependentUpon>AnApp.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,12 @@
     <Compile Include="UserControls\AppsViewer.xaml.cs">
       <DependentUpon>AppsViewer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\HamburgerMenuViews\HamburgerMenuApp.xaml.cs">
+      <DependentUpon>HamburgerMenuApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HeaderRightButtons.xaml.cs">
+      <DependentUpon>HeaderRightButtons.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProductiviyTopApps.xaml.cs">
       <DependentUpon>ProductiviyTopApps.xaml</DependentUpon>
     </Compile>
@@ -111,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TopAppsWrapped.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,6 +156,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\AppsViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HamburgerMenuViews\HamburgerMenuApp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HeaderRightButtons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

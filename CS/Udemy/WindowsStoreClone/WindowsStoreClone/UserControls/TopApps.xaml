@@ -64,6 +64,8 @@
             HorizontalAlignment="Stretch"
             Stretch="Fill"
             Margin="2,2,2,2"
+            MouseUp="Image_MouseUp"
+            
             />
         <Image
             Grid.Row="2"
@@ -73,6 +75,8 @@
             HorizontalAlignment="Stretch"
             Stretch="Fill"
             Margin="2,2,2,2"
+            MouseUp="Image_MouseUp"
+            
             />
         <Grid  Name="BottomGrid"  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
@@ -83,10 +87,18 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-            <Button Name="TopAppsButton" Grid.Row="0" Grid.Column="0"  Content="Top Apps" Margin="2,2,2,2" FontSize="20"/>
+            <Button Name="TopAppsButton" Grid.Row="0" Grid.Column="0"  Content="Top Apps" Margin="2,2,2,2" FontSize="20" Click="TopAppsButton_Click"/>
             <Button Name="FeaturedButton" Grid.Row="0" Grid.Column="1"  Content="Featured" Margin="2,2,2,2" FontSize="20"/>
             <Button Name="TopGamesButton" Grid.Row="1" Grid.Column="0"  Content="Top Games" Margin="2,2,2,2" FontSize="20"/>
             <Button Name="CollectionsButton" Grid.Row="1" Grid.Column="1"  Content="Collections" Margin="2,2,2,2" FontSize="20"/>
         </Grid>
+
+        <Canvas Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" Grid.RowSpan="3" Opacity="0.4" Background="#2e2e2e" IsHitTestVisible="False" />
+        <Label Name="AppNameLabelTop" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2" FontSize="25" FontWeight="DemiBold" Foreground="White" VerticalAlignment="Bottom" HorizontalContentAlignment="Center">Tropical</Label>
+        <Label Name="AppNameLabelTop1" Grid.Column="3" Grid.Row="0" FontSize="25" FontWeight="DemiBold" Foreground="White" VerticalAlignment="Bottom" HorizontalContentAlignment="Center">Circus fun</Label>
+        <Label Name="AppNameLabelTop2" Grid.Column="3" Grid.Row="1" FontSize="25" FontWeight="DemiBold" Foreground="White" VerticalAlignment="Bottom" HorizontalContentAlignment="Center">Race Xtreme</Label>
+        <Label Name="AppNameLabelTop3" Grid.Column="3" Grid.Row="2" FontSize="25" FontWeight="DemiBold" Foreground="White" VerticalAlignment="Bottom" HorizontalContentAlignment="Center">Chat Message</Label>
+        <Label Name="AppNameLabelTop4" Grid.Column="2" Grid.Row="2" FontSize="25" FontWeight="DemiBold" Foreground="White" VerticalAlignment="Bottom" HorizontalContentAlignment="Center"> Night Castle</Label>
+
     </Grid>
 </UserControl>
